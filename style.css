@@ -9,9 +9,9 @@ body {
 
 .container {
     background: white;
-    padding: 30px;
+    padding: 50px;
     border-radius: 10px;
-    width: 400px;
+    width: 500px;
     text-align: center;
 }
 
@@ -23,10 +23,11 @@ button {
     padding: 10px 20px;
     margin: 10px;
     border: none;
-    background: #4f6666;
+    background: #301bf0;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 button:hover {
@@ -38,7 +39,7 @@ button:hover {
     display: block;
     width: 100%;
     margin: 5px 0;
-    background: #eee;
+    background: #abcef3;
     color: black;
 }
 
