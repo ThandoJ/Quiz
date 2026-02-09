@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Quiz App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Home Screen -->
+    <div id="home-screen">
+        <h1>Quiz Application</h1>
+        <p>Select a Topic</p>
+
+        <button class="topic-btn" onclick="startQuiz('science')">Science</button>
+        <button class="topic-btn" onclick="startQuiz('math')">Math</button>
+        <button class="topic-btn" onclick="startQuiz('sports')">Sports</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="hidden">
+
+        <div class="quiz-header">
+            <span id="question-number"></span>
+            <span id="score-display"></span>
+        </div>
+
+        <div id="question-container">
+            <h2 id="question-text"></h2>
+        </div>
+
+        <div id="answers-container"></div>
+
+        <button id="next-btn" onclick="nextQuestion()" class="hidden">Next Question</button>
+
+    </div>
+
+    <!-- Results Screen -->
+    <div id="result-screen" class="hidden">
+
+        <h2>Quiz Finished!</h2>
+
+        <p id="final-score"></p>
+        <p id="percentage"></p>
+
+        <button onclick="restartQuiz()">Restart Quiz</button>
+        <button onclick="goHome()">Home</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
