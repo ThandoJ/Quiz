@@ -1,6 +1,6 @@
 body {
     font-family: Arial;
-    background: linear-gradient(to right, #4f89fe, #1900fe);
+    background: rgb(85, 84, 85);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,10 +8,11 @@ body {
 }
 
 .container {
-    background: white;
-    padding: 30px;
+    background: rgb(14, 13, 13);
+    padding: 50px;
     border-radius: 10px;
     width: 400px;
+    color: rgb(241, 235, 235);
     text-align: center;
 }
 
@@ -23,22 +24,24 @@ button {
     padding: 10px 20px;
     margin: 10px;
     border: none;
-    background: #4f6666;
-    color: white;
+    background: #13044c;
+    color: rgb(242, 231, 237);
     border-radius: 5px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 button:hover {
-    background: #5baee2;
+    background: #35286c;
+    transform: scale(1.1);
 }
 
 .answer-btn {
     display: block;
     width: 100%;
     margin: 5px 0;
-    background: #eee;
-    color: black;
+    background: #13044c;
+    color: rgb(238, 232, 232);
 }
 
 .correct {
