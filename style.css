@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    background: white;
+    background: rgb(185, 183, 183);
     padding: 50px;
     border-radius: 10px;
     width: 500px;
@@ -19,25 +19,66 @@ body {
     display: none;
 }
 
+.img-btn{
+    width:120px;
+    height:120px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border:none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    color: rgb(13, 12, 12);
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+
+.btn-one{
+    background-image: url(Science-image.jpg);
+}
+
+.btn-two{
+    background-image: url(Math-image.webp);
+}
+
+.btn-three{
+    background-image: url(sport-image.webp);
+}
+
 button {
     padding: 10px 20px;
     margin: 10px;
     border: none;
-    background: #301bf0;
-    color: white;
+    color: rgb(12, 12, 12);
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    width: 140px;
+    height: 50px;
+}
+
+.next-btn{
+    background-color: #1900fe;
+    width: 100px;
+    height: 65px;
 }
 
 button:hover {
-    background: #5baee2;
+    background: #2d67e3;
     transform: scale(1.1);
 }
 
 .answer-btn {
     display: block;
     width: 100%;
+    height: 50px;
     margin: 5px 0;
     background: #abcef3;
     color: black;
